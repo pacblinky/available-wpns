@@ -14,5 +14,5 @@ default: $(TARGET)
 $(TARGET): $(OBJECTS)
 	$(COMPILER) $(OBJECTS) -o $(TARGET)
 
-$(OBJECTS): ./src/avawpns.c ./src/resource.rc
+$(OBJECTS): ./src/avawpns.c
 	$(COMPILER) -c ./src/avawpns.c -o ./src/avawpns.obj
