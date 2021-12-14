@@ -42,9 +42,9 @@ int main(void)
         else if(!strcmp(cmd,"clear") || !strcmp(cmd,"cls"))
         {
             #ifdef _WIN32
-                system("cls"); // clears the console/terminal/command line, if the current environment windows we use the system command "cls" (at compile time)
+                system("cls");
             #else
-                system("clear"); // else for other operating systems use the system command "clear" to clear the console/terminal/command line 
+                system("clear");
             #endif
         }
         else if(!strcmp(cmd,"exit") || !strcmp(cmd,"quit")){ printf("\n"); exit(0);}
