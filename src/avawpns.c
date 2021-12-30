@@ -10,6 +10,9 @@
 #define OFF '0'
 #define INPUT_BUFFER 169
 
+void toggleWPN(char* wpn, char toggle);
+void output();
+
 char availableWPNS[WPNS_COUNT + 1] = "200000000000000000000";
 const char wpns[WPNS_COUNT][8] = {"knife", "gpistol", "spistol", "shotgun", "uzi", "m3a1", "usas12", "m4", "ak74", "sniper", "m60", "mm1", "rpg", "none", "flash", "none", "none", "none", "frag", "fire", "smoke"};
 const char wpns_name[WPNS_COUNT][22] = {"Knife", "M1911A", "USSOCOM", "M590 Shotgun", "Micro Uzi", "M3A1", "USAS12", "M4 Assault Rifle", "AK74 Assault Rifle", "MSG90A1 Sniper Rifle", "M6O Machinegun", "MM1 Grenade Launcher", "RPG-7 Rocket Launcher", "none", "M84 (Flash grenade)", "none", "none", "none", "SMOH92 (Frag grenade)", "ANM14 (Fire grenade)", "M15 (Smoke grenade)"};
