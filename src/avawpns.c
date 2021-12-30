@@ -2,11 +2,13 @@
 #include <string.h>
 #include <stdlib.h>
 #ifdef _WIN32
-#include <windows.h>
+ #include <windows.h>
 #endif
 
+#define WPNS_COUNT 21
 #define ON '2'
 #define OFF '0'
+#define INPUT_BUFFER 169
 
 char availableWPNS[WPNS_COUNT + 1] = "200000000000000000000";
 const char wpns[WPNS_COUNT][8] = {"knife", "gpistol", "spistol", "shotgun", "uzi", "m3a1", "usas12", "m4", "ak74", "sniper", "m60", "mm1", "rpg", "none", "flash", "none", "none", "none", "frag", "fire", "smoke"};
