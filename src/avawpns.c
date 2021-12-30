@@ -4,11 +4,13 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif
-#include "avawpns.h"
+
+#define ON '2'
+#define OFF '0'
 
 char availableWPNS[WPNS_COUNT + 1] = "200000000000000000000";
-char wpns[WPNS_COUNT][8] = {"knife", "gpistol", "spistol", "shotgun", "uzi", "m3a1", "usas12", "m4", "ak74", "sniper", "m60", "mm1", "rpg", "none", "flash", "none", "none", "none", "frag", "fire", "smoke"};
-char wpns_name[WPNS_COUNT][22] = {"Knife", "M1911A", "USSOCOM", "M590 Shotgun", "Micro Uzi", "M3A1", "USAS12", "M4 Assault Rifle", "AK74 Assault Rifle", "MSG90A1 Sniper Rifle", "M6O Machinegun", "MM1 Grenade Launcher", "RPG-7 Rocket Launcher", "none", "M84 (Flash grenade)", "none", "none", "none", "SMOH92 (Frag grenade)", "ANM14 (Fire grenade)", "M15 (Smoke grenade)"};
+const char wpns[WPNS_COUNT][8] = {"knife", "gpistol", "spistol", "shotgun", "uzi", "m3a1", "usas12", "m4", "ak74", "sniper", "m60", "mm1", "rpg", "none", "flash", "none", "none", "none", "frag", "fire", "smoke"};
+const cchar wpns_name[WPNS_COUNT][22] = {"Knife", "M1911A", "USSOCOM", "M590 Shotgun", "Micro Uzi", "M3A1", "USAS12", "M4 Assault Rifle", "AK74 Assault Rifle", "MSG90A1 Sniper Rifle", "M6O Machinegun", "MM1 Grenade Launcher", "RPG-7 Rocket Launcher", "none", "M84 (Flash grenade)", "none", "none", "none", "SMOH92 (Frag grenade)", "ANM14 (Fire grenade)", "M15 (Smoke grenade)"};
 
 int main(void)
 {
